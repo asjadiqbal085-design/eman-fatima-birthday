@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Happy Birthday Dear Bestie</title>
+<style>
+*{box-sizing:border-box} body{margin:0;min-height:100vh;font-family:Arial,sans-serif;background:linear-gradient(135deg,#ffd8e8,#e8dcff,#d9f5ff);display:flex;align-items:center;justify-content:center;overflow:hidden}
+.card{width:min(94%,440px);min-height:620px;padding:24px 20px;background:#ffffffd9;backdrop-filter:blur(10px);border-radius:30px;box-shadow:0 18px 50px #754d7930;text-align:center;position:relative;overflow:hidden}
+.page{display:none;min-height:570px;flex-direction:column;align-items:center;justify-content:center;animation:fade .45s ease}.page.active{display:flex}
+@keyframes fade{from{opacity:0;transform:translateY(15px)}to{opacity:1;transform:none}}
+.emoji{font-size:70px;margin-bottom:12px}h1,h2{color:#8b3d70;margin:8px 0 15px}h1{font-size:30px}h2{font-size:25px}
+p{font-size:17px;line-height:2;color:#4d4050;margin:7px 0 20px}.long{text-align:right;max-height:330px;overflow:auto;padding:5px 8px}
+button{border:0;border-radius:30px;padding:13px 27px;font-size:17px;background:linear-gradient(90deg,#d75c9d,#8c69e7);color:white;cursor:pointer;box-shadow:0 7px 18px #7b4d8a35}
+.heart{position:absolute;font-size:24px;animation:float 5s linear infinite;opacity:.7}@keyframes float{0%{transform:translateY(650px);opacity:0}20%{opacity:.8}100%{transform:translateY(-80px) rotate(360deg);opacity:0}}
+.envelope{width:220px;height:145px;background:#eaa2bf;border-radius:12px;position:relative;cursor:pointer;box-shadow:0 12px 25px #70415a33;margin:15px}.envelope:before{content:"";position:absolute;inset:0;background:#f4bad0;clip-path:polygon(0 0,50% 58%,100% 0);border-radius:12px}.seal{position:absolute;left:50%;top:52%;transform:translate(-50%,-50%);width:45px;height:45px;border-radius:50%;background:#c94e83;color:white;display:flex;align-items:center;justify-content:center;font-size:22px;z-index:2}.letter{display:none;background:#fff8fc;border:2px dashed #d88bad;border-radius:20px;padding:18px;max-height:330px;overflow:auto}.letter.show{display:block}
+.final{font-weight:bold;color:#743861;font-size:19px}
+</style>
+</head>
+<body>
+<div class="card">
+<span class="heart" style="left:7%;animation-delay:0s">💗</span><span class="heart" style="left:28%;animation-delay:1.3s">✨</span><span class="heart" style="left:55%;animation-delay:2s">💕</span><span class="heart" style="left:82%;animation-delay:.7s">🌸</span>
+
+<section class="page active">
+<div class="emoji">🎀</div><h1>Happy Birthday Dear Bestie</h1>
+<p>ایک بہت خاص انسان کے لیے ایک بہت خاص سا سرپرائز… 💗<br>آخر تک ضرور دیکھنا۔</p>
+<button onclick="next()">سرپرائز کھولو 💕</button>
+</section>
+
+<section class="page">
+<div class="emoji">🎂</div><h2>22 August 🎉</h2>
+<p>یہ دن میرے لیے بھی خاص ہے، کیونکہ اسی دن میری پیاری bestie کی دنیا میں آمد ہوئی تھی۔ 🥹💗</p>
+<button onclick="next()">آگے چلو ✨</button>
+</section>
+
+<section class="page">
+<div class="emoji">💌</div><h2>ایک لفافہ تمہارے لیے</h2>
+<p>اس لفافے کو کھولو… اندر ہماری friendship کا ایک چھوٹا سا سرپرائز ہے۔ 🫶</p>
+<div class="envelope" onclick="openLetter()"><div class="seal">💗</div></div>
+<div id="letter" class="letter">👭💞<br><b>Best Friendship Forever</b><br><br>کچھ دوست زندگی میں صرف دوست بن کر نہیں آتے، بلکہ دل کا ایسا حصہ بن جاتے ہیں جن کے بغیر بہت سی خوشیاں ادھوری لگتی ہیں۔</div>
+<br><button onclick="next()">آگے 💕</button>
+</section>
+
+<section class="page">
+<div class="emoji">👭</div><h2>میری پیاری Eman Fatima 💗</h2>
+<p>تمہارا نام صرف نام نہیں، میری بہت سی خوبصورت یادوں کا حصہ ہے۔ تمہاری دوستی میرے لیے واقعی بہت قیمتی ہے۔ 🌸</p>
+<button onclick="next()">آگے 🥰</button>
+</section>
+
+<section class="page">
+<div class="emoji">🫂</div><h2>ہماری Friendship</h2>
+<p>ہم نے ساتھ ہنسا، باتیں کیں، کبھی ناراض ہوئے اور پھر من بھی گئے… یہی چھوٹی چھوٹی چیزیں ہماری friendship کو اتنا خوبصورت بناتی ہیں۔ 💞</p>
+<button onclick="next()">آگے 🌷</button>
+</section>
+
+<section class="page">
+<div class="emoji">😂💗</div><h2>وہ یادیں…</h2>
+<p>ہماری بے مقصد باتیں، اچانک ہنس پڑنا، چھوٹی چھوٹی شرارتیں اور وہ moments جن پر صرف ہم دونوں ہنس سکتے ہیں—یہ سب ہمیشہ یاد رہیں گے۔ 😭😂</p>
+<button onclick="next()">آگے ✨</button>
+</section>
+
+<section class="page">
+<div class="emoji">🌸</div><h2>دل سے ایک دعا 🤲🏻</h2>
+<p>اللہ تمہیں ہمیشہ خوش رکھے، تمہاری ہر اچھی خواہش پوری کرے، تمہیں کامیابی دے اور تمہاری زندگی کو سکون اور خوبصورت لمحوں سے بھر دے۔ آمین۔ 🤍</p>
+<button onclick="next()">آگے 💕</button>
+</section>
+
+<section class="page">
+<div class="emoji">💖</div><h2>ایک لمبا سا پیغام</h2>
+<p class="long">میری پیاری Eman Fatima، آج 22 August کو میں دل سے تمہیں Happy Birthday کہنا چاہتی ہوں۔ 🎂💗 تم میری زندگی کی ان خوبصورت چیزوں میں سے ایک ہو جن کے لیے میں ہمیشہ شکر گزار رہوں گی۔ ہماری friendship میرے لیے صرف ایک عام دوستی نہیں بلکہ بہت سی ہنسی، باتوں، یادوں، شرارتوں، ناراضگیوں اور پھر دوبارہ مسکرانے کا خوبصورت نام ہے۔ تمہارے ساتھ گزارا ہوا ہر اچھا وقت میرے لیے خاص ہے۔ کبھی کبھی انسان کو اندازہ نہیں ہوتا کہ کوئی دوست اس کی زندگی میں کتنی اہم جگہ بنا چکا ہے، لیکن تم ان لوگوں میں سے ہو جن کی موجودگی خود بخود دن کو بہتر بنا دیتی ہے۔ میری دعا ہے کہ تمہاری زندگی کا ہر نیا سال پچھلے سال سے زیادہ خوبصورت ہو، تم ہمیشہ دل سے خوش رہو، تمہارے چہرے کی مسکراہٹ کبھی کم نہ ہو اور اللہ تمہیں ہر مشکل سے محفوظ رکھے۔ تم جو بھی خواب دیکھو، اللہ انہیں پورا کرنے کے راستے آسان کرے۔ ہماری friendship میں چاہے وقت کے ساتھ کتنی ہی تبدیلیاں آئیں، میری خواہش ہے کہ ہماری خوبصورت یادیں ہمیشہ ہمارے ساتھ رہیں۔ Thank you for being such a special friend. تم ہمیشہ میرے لیے بہت خاص رہو گی۔ Once again, Happy Birthday meri pyari bestie Eman Fatima! 🎀🎂💞</p>
+<button onclick="next()">آگے 🥹</button>
+</section>
+
+<section class="page">
+<div class="emoji">🎁</div><h2>Birthday Wish ✨</h2>
+<p>May your life be filled with happiness, success, peace, beautiful surprises and countless reasons to smile. 💗</p>
+<button onclick="next()">آگے 🎉</button>
+</section>
+
+<section class="page">
+<div class="emoji">🥳</div><h2>آج صرف تمہارا دن ہے!</h2>
+<p class="final">HAPPY BIRTHDAY EMAN FATIMA! 🎂💗</p>
+<p>22 August ہمیشہ تمہارے لیے خوشیوں والا دن رہے۔ 🌸</p>
+<button onclick="next()">آخری سرپرائز 💝</button>
+</section>
+
+<section class="page">
+<div class="emoji">🌙✨</div><h2>ہمیشہ خوش رہنا</h2>
+<p>چاہے زندگی ہمیں کہیں بھی لے جائے، میری دعا ہے کہ تم ہمیشہ خوش، محفوظ اور کامیاب رہو۔ تمہاری مسکراہٹ ہمیشہ ایسی ہی خوبصورت رہے۔ 🫂💗</p>
+<button onclick="next()">آگے 🎀</button>
+</section>
+
+<section class="page">
+<div class="emoji">🎂🎉💖</div><h1>Happy Birthday Dear Bestie</h1>
+<p class="final">Eman Fatima 💗</p>
+<p>تمہارا نیا سال ڈھیروں خوشیوں، کامیابیوں اور خوبصورت یادوں سے بھرا ہو۔<br><br>Bestie forever! 👭💞</p>
+<div style="font-size:30px">🎀💗🎂✨🫂🌸</div>
+</section>
+</div>
+<script>
+let current=0;const pages=document.querySelectorAll('.page');
+function next(){pages[current].classList.remove('active');current=(current+1)%pages.length;pages[current].classList.add('active')}
+function openLetter(){document.getElementById('letter').classList.add('show')}
+</script>
+</body>
+</html>
